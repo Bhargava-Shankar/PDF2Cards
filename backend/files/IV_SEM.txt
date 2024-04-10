@@ -1,0 +1,43 @@
+Sd/..
+Controller of Examination
+Saveetha Engineering College (Autonomous)
+Saveetha Nagar ,Thandalam ,Chennai
+End Semester Examination - Jun-2023
+Student Name: BHARGAVA S Reg. No.: 212221040029
+Semester: EVEN Gender: Male
+Program: B.E. Computer Science and Engineering
+EVEN 19MC804-
+Internship/Entrepreneurship/Consultancy10 O 2 Pass
+EVEN 19MC801-Professional Ethics 8 A 0 Pass
+EVEN 19CS407-Theory of Computation 8 A 3 Pass
+EVEN 19CS308-Software Testing Laboratory 10 O 2 Pass
+EVEN 19CS402-Design and Analysis of Algorithms 9 A+ 3 Pass
+EVEN 19CS414-Mobile Application Development 10 O 3 Pass
+EVEN 19CS408-Software Engineering 8 A 4 Pass
+EVEN 19MA218-Probability and Queueing Theory 10 O 4 Pass
+EVEN 19CS406-Computer Networks 8 A 4 Pass
+EVEN 19EC616-Data Analytics with Python 9 A+ 2 Pass
+Credit Registered : 27 Credit Completed : 27Semest er Cour se NameGrade
+pointGrade CreditResult
+statusSd/..
+Controller of Examination
+Saveetha Engineering College (Autonomous)
+Saveetha Nagar ,Thandalam ,Chennai
+End Semester Examination - Jun-2023
+Student Name: BHARGAVA S Reg. No.: 212221040029
+Semester: EVEN Gender: Male
+Program: B.E. Computer Science and Engineering
+EVEN 19MC804-
+Internship/Entrepreneurship/Consultancy10 O 2 Pass
+EVEN 19MC801-Professional Ethics 8 A 0 Pass
+EVEN 19CS407-Theory of Computation 8 A 3 Pass
+EVEN 19CS308-Software Testing Laboratory 10 O 2 Pass
+EVEN 19CS402-Design and Analysis of Algorithms 9 A+ 3 Pass
+EVEN 19CS414-Mobile Application Development 10 O 3 Pass
+EVEN 19CS408-Software Engineering 8 A 4 Pass
+EVEN 19MA218-Probability and Queueing Theory 10 O 4 Pass
+EVEN 19CS406-Computer Networks 8 A 4 Pass
+EVEN 19EC616-Data Analytics with Python 9 A+ 2 Pass
+Credit Registered : 27 Credit Completed : 27Semest er Cour se NameGrade
+pointGrade CreditResult
+status

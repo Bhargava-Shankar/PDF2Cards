@@ -1,0 +1,8 @@
+{"cards" : [
+{"question" : "What are your preferred programming languages?", "answer" : "Java, C++, Python, Django, Spring Boot"},
+{"question" : "What is your experience in web development?", "answer" : "Built a user management webapp using JSP and Java Servlets"},
+{"question" : "Have you worked with mobile app development?", "answer" : "Built a full stack website with Django and Flutter"},
+{"question" : "What is a MERN Full stack - application?", "answer" : "Built a Trello like MERN Full stack - application for Agile/Scrum based Project management operations"},
+{"question" : "What are your strengths as an engineer?", "answer" : "Problem solving and critical thinking skills"}
+]
+}

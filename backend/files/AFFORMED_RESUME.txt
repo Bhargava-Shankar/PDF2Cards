@@ -1,0 +1,70 @@
+Passionate Software DeveloperBHARGAVA SHANKAR
+EDUCATION
+Saveetha Engineering College
+2021 - Present
+SKILLS
+Java - Intermediate
+C++ - Intermediate
+Python - Novice
+Dart - NoviceWORK EXPERIENCE
+Marvel Tech COE India Pvt. Ltd.
+February 2023 - March 2023JAVA DEVELOPER INTERNPROFILE
+9789099333
+Chennai, Tamil Nadubhargavashankar2003@gmail.com
+ACHIEVEMENTS
+President of College Math Club, Organized
+5+ events
+Conducted Session on Flutter App
+Development to teach fellow learners as part
+of Tech Society.
+Developed a student pass management app
+for college.B.E. in Computer Science and
+EngineeringCONTACT
+Build a user management webapp using JSP and Java Servlets to
+maintain access for testers about server Logs
+Learnt to Setup Local FTP Server.
+Built OTP authentication via Email using Java libraries
+Integrated with company’s development environment and allowed
+testers to login via the webapp
+PROJECTS
+Spotify Analytics Website (knowyourspot)
+Built a full stack website with Django + React.js
+Implemented OAuth login flow and created interactive graphs for versatile data
+Understood and Implemented RESTful API
+Student Gate Pass Management App (PassVerifier)
+Built a full stack website with Django and Flutter
+Implemented full Session management from scratch in the backend.
+Built Minimalistic UI for the frontend with Flutter & Dart
+worked  with SQLite ORM for DB Operations
+Project Management Application 
+Built a Trello like Full stack - application for Agile/Scrum based Project
+management operations using Next.js + Express.js
+Implemented CRUD Operations with gRPC API architecture
+Currently migrating the project to GraphQL web servicePassionate Engineer and an ardent learner, I seek to leverage my
+problem solving and critical thinking skills to solve real-world
+problems. Dynamic by nature, adept at adapting to changes. I thrive
+where flexibility with innovation is key to success.
+LinkedIn ProfileGithub Profile
+LANGUAGES
+Django - Intermediate
+Spring Boot - Novice
+Node.js & Express.js - proficient
+React.js & Next.js - proficient
+GraphQL & MongoDB & SQL -
+intermediate
+JSP and Servlets
+Flutter - IntermediateFRAMEWORKSPersonality Prediction (Persona)
+Built a Personality Prediction Website with a basic Machine Learning Pipeline +
+Django + React.js + Redux
+Built it as a SPA and created dynamic graphs with React.js libraries
+Designed the website responsive with pure CSS
+TOOLS 
+Trello
+BitBucket
+Git
+Github
+Azure 
+CERTIFCATIONS 
+MongoDB Essentials - ICT Academy Learnathon 2023
+Data Analytics with Python - NPTEL
+Azure AI Engineer ( second grade ) - ICT Academy

@@ -8,6 +8,7 @@ from flask_cors import CORS
 from pypdf import PdfReader 
 UPLOAD_FOLDER = './files'
 ALLOWED_EXTENSIONS = {'pdf'}
+import json
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -37,11 +38,24 @@ def summarize():
         api_keu = os.environ["API_KEY"]
         genai.configure(api_key=os.environ['API_KEY'])
         model = genai.GenerativeModel('gemini-pro')
-        response = model.generate_content('Please summarise this document for last node study purposes: ...'+file.read())
-        print(response.text)
-        return {
-            "response" : response.text
-        }
+        input_prompt = """Generate 8 flash cards that has questions and answers from the information given in the text, keep the questions and answers short and relevent to the text alone,
+        give list of question and answers in the json format {
+            {"cards" : [
+                {
+                    "question" : "question goes here",
+                    "answer" : "answer goes here"
+                },
+                {
+                    "question" : "question goes here",
+                    "answer" : "answer goes here"
+                }
+            ]
+            }
+        } also dont use back tick markdown ``json while giving response """
+        response = model.generate_content(input_prompt+file.read()) 
+        finalResponse = json.loads(response.text)
+        print(finalResponse)
+        return finalResponse
 
     return {"status": "failure"}
 

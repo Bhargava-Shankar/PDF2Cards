@@ -11,8 +11,8 @@ const Hero = () => {
           <div className='motto'>
             Your Ultimate Learning Companion
         </div>
-          <CardDummy></CardDummy>
-          <img className='arrowLogo' src={arrow} alt="" />
+          <CardDummy></CardDummy> 
+        <img className='arrowLogo' src={arrow} alt="" />
     </div>
   )
 }

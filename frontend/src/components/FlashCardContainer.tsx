@@ -16,7 +16,7 @@ const FlashCardContainer = () => {
                 })
             }
 
-        </div> : <div></div>
+        </div> : <div>NO FILE UPLOADED</div>
   )
 }
 

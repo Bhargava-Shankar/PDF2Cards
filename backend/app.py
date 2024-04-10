@@ -35,8 +35,8 @@ def summarize():
     #get file data and call google api
     with open(f"{file_path[:-4]}.txt","r") as file:
         #call google api here
-        api_keu = os.environ["API_KEY"]
-        genai.configure(api_key=os.environ['API_KEY'])
+        api_keu = os.environ["GEMINI_API_KEY"]
+        genai.configure(api_key=os.environ['GEMINI_API_KEY'])
         model = genai.GenerativeModel('gemini-pro')
         input_prompt = """Generate 8 flash cards that has questions and answers from the information given in the text, keep the questions and answers short and relevent to the text alone,
         give list of question and answers in the json format {

@@ -2,6 +2,7 @@ html,
 body,
 #app,
 #app>div {
+    background-color: azure;
     height: 100%;
     overflow: hidden;
 }

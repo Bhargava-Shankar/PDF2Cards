@@ -5,21 +5,29 @@ import FlashCard from './components/FlashCard'
 import FlashCardContainer from './components/FlashCardContainer'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+function Home() {
+  return (
+    <div className="content">
+      <Hero /><FileForm />
+      <FlashCardContainer />
+    </div>
+  )
+}
 function App(){
   return (
     <>
-      <div className="App">
-        <Navbar></Navbar>
-        <div className="content">
-          <ContextProvider>
-            <Hero></Hero>
-            {/* <FlashCardContainer></FlashCardContainer> */}
-            <FileForm></FileForm>
-          </ContextProvider>
-        </div>
-      </div>
-      
+      <div className='App'>
+        <ContextProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Home />}></Route>
+              <Route path="/cards" element={<FlashCardContainer/> }></Route>
+            </Routes>
+          </BrowserRouter>
+        </ContextProvider>
+    </div>
     </>
   )
 }

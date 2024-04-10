@@ -3,6 +3,8 @@ import { formContext } from '../contexts/ContextProvider';
 import uploadLogo from "/assets/uploadLogo.svg"
 import fileLogo from "/assets/fileLogo.svg"
 import deleteLogo from "/assets/deleteLogo.svg"
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import "./css/FileForm.scss"
 const FileForm = () => {
@@ -11,41 +13,49 @@ const FileForm = () => {
     const inputRef = useRef<any>();
     const [fileName, setFileName] = useState<string | null>(null);
     const handleChange = (e: any): void => {
+        console.log(e.target);
         setFileName(e.target?.files[0].name);
     }
+    const navigate = useNavigate();
   return (
       <>
-          <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="upload">
-              <div className="upload__upload-box">
-                  <div className="upload__upload-logo">
+          <div className='upload-container'>
+              <form onSubmit={() => {
+                  handleSubmit(onSubmit)
+              }} className="upload">
+                  <div className="upload__upload-content">
                       <img src={uploadLogo} alt="" />
-                      <div className='title'>Upload Your File Here</div>
-                          <p>File supported: .pdf</p>
-                        <div className="upload__browse">
-                            <label htmlFor="file">Browse</label>
-                              <input type="file" ref={inputRef}
-                                  {...register("file")} id="file"
-                                onChange={handleChange}
-                            />
-                        </div>
-                  </div> 
-                      {
-                          fileName ? <div className="file">
-                          <img className="fileLogo" src={fileLogo} />
-                          <div className="file-name">{fileName}</div>
-                          <div className='file-size'></div>
-                          <img src={deleteLogo} className='deleteLogo' alt="" />
+                      <div>Upload Your File Here</div>
+                      <p>Supported Formats: .pdf</p>
+                  </div>
+                  <div className="upload__file-input" ref={inputRef} onChange={handleChange}>
+                      <label htmlFor="file">Browse</label>
+                      <input {...register("file")} type="file" id="file"   
+                    />
+                  </div>
+                  {
+                      fileName ? <div className="upload__uploaded-file">
+                   
+                        <img src={fileLogo} className="fileLogo" alt="" />
+                     
+                          <div className="fileName">
+                              {fileName}
+                          </div>
+                              <img src={deleteLogo} alt="" className="deleteLogo" />
+                       
                       </div> : <div></div>
-                      }
-                    <div className="upload__submit-box" >
-                        <label htmlFor="submit">SUBMIT</label>
-                        <input type="submit" id='submit'/>
-                    </div>
-              </div>
+                  }
                   
-              </div>    
-          </form>
+                  <div className="upload__submit">
+                      
+                      <label htmlFor="submit-btn" >SUBMIT
+                      </label>
+                      <input type="submit" id="submit-btn" />
+                  </div>
+
+              </form>
+          </div>
+              
 
       </>
   )

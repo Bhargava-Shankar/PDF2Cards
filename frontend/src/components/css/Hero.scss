@@ -1,0 +1,25 @@
+.hero{
+    .motto{
+        font-size: 4rem;
+        font-weight: 900;
+        span{
+            &:hover{
+                background-color: red;
+            }
+        }
+    }
+    width: min-content;
+    flex-basis: auto;
+    flex-grow: 8 ;
+    .arrowLogo{
+        position: absolute;
+        top: 40px;
+        left: 700px;
+        height: 120px;
+        rotate: (-110deg);
+        animation: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-iteration-count: infinite;
+        transition: all 0.2s linear ;
+
+    }
+}

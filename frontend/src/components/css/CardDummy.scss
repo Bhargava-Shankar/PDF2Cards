@@ -1,0 +1,95 @@
+.cd {
+    background-color: transparent;
+    width: 270px;
+    height: 200px;
+    position: absolute;
+    top: 150px;
+    left: 420px;
+    perspective: 1000px;
+    cursor: pointer;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.cd__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.cd:hover .cd__inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.cd__front,
+.cd__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    box-shadow: 5px 5px 5px black;
+}
+
+/* Style the front side (fallback if image is missing) */
+.cd__front {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    background-color: rgb(62, 62, 62);
+    color: white;
+}
+
+/* Style the back side */
+.cd__back {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    background-color: rgb(32, 105, 26);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.cd__header {
+    background-color: grey;
+    color: black;
+    display: flex;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+
+    .cd__number {
+        display: flex;
+        justify-content: center;
+        flex-basis: auto;
+        flex-grow: 1000;
+    }
+
+    .cd__option {
+        flex-basis: auto;
+        flex-grow: 1;
+
+    }
+}
+
+.cd__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bolder;
+}

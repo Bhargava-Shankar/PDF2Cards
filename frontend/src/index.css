@@ -1,5 +1,7 @@
-body{
-    height: 100vh;
+html,
+body,
+#app,
+#app>div {
+    height: 100%;
     overflow: hidden;
-    background-color: azure;
 }

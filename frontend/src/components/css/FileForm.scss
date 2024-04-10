@@ -9,26 +9,19 @@
 }
 .upload__upload-box{
     width: 25rem;
-    height: 30rem;
+    height: 70%;
     background-color: rgb(255, 255, 255);
-    padding-top: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
     border-radius: 10px;
     border: 5px dashed rgb(99, 95, 95);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     background-clip: padding-box;
-    .or{
-        position: relative;
-        top: -90px;
-        font-weight: bolder;
-    }
-
 }
 .upload__upload-logo{
+    position: relative;
+    top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,22 +32,20 @@
     }
     .title{
         position: relative;
-        top: -18px;
+        // top: -18px;
         font-size: 2rem;
         font-weight: bolder;
     }
     p{
         position: relative;
-        top: -33px;
+        // top: -33px;
         font-weight: 600;
         color: rgb(193, 192, 192);
     }
 }
-.upload__choose-file{
-    position: relative;
-    top: -120px;
+.upload__browse{
     label{
-        border: 3px solid rgb(141, 179, 255);
+        border: 3px solid rgb(128, 170, 241);
         border-radius: 5rem;
         padding-top: 5px;
         padding-bottom: 7px;
@@ -69,4 +60,62 @@
     input{
         display: none;
     }
+}
+.upload__submit-box{
+    position: relative;
+    bottom: 20px;
+    height: 20px;
+    background-color: rgb(19, 97, 19);
+    border-radius: 10px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 80%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    text-align: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    &:active{
+        background-color: rgb(38, 154, 38);
+    }
+    label{
+        font-weight: bolder;
+    }
+    #submit{
+        display: none;
+    }
+}
+.file{
+    background-color: rgb(172, 216, 255);
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    gap: 10px;
+    .fileLogo{
+        height: 2rem;
+        background-color: transparent;
+        position: relative;
+        left: 0;
+    }
+    .file-name {
+            font-size: medium;
+            font-weight: bolder;
+            flex-grow: 1;
+
+    }
+    .deleteLogo{
+        height: 2.2rem;
+        cursor: pointer;    
+        position: relative;
+        right: 0;
+    }
+    
 }

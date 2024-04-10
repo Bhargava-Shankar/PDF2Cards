@@ -11,9 +11,9 @@ const ContextProvider = ({ children }: childProps) => {
   const [cardList, setCardList] = useState<cardProps[] | null>([]);
     const [message, setMessage] = useState<string>("")
     const { register, handleSubmit } = useForm<Input>();
-    const onSubmit: SubmitHandler<Input> = async (data: any) => {
-        const formData = new FormData();
-        formData.append('file', data.file);
+  const onSubmit: SubmitHandler<Input> = async (data: any) => {
+    console.log('SENDING FILE')
+    console.log(data.file)
         await axios.post("http://127.0.0.1:5000/summarize", data.file, {
             headers: {
                 'Content-type': 'multipart/form-data'

@@ -21,7 +21,8 @@ CORS(app)
 @app.post('/summarize')
 def summarize():
     file = request.files
-    pdfFile = file.getlist('files[]')[0]
+    print("FILE RECIEVED: ",file)
+    pdfFile = file.getlist('file')[0]
     file_name = secure_filename(pdfFile.filename)
     file_path = os.path.join(app.config['UPLOAD_FOLDER'], file_name)
     pdfFile.save(file_path)

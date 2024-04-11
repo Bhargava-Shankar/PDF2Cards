@@ -1,7 +1,7 @@
 import React from 'react'
 import "./css/Hero.scss"
 import CardDummy from './CardDummy'
-import arrow from "../../public/assets/arrow.svg"
+import arrow from "/assets/arrow.svg"
 const Hero = () => {
   return (
       <div className='hero'>

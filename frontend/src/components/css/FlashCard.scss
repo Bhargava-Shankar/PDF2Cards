@@ -2,6 +2,7 @@
     background-color: transparent;
     width: 300px;
     height: 200px;
+    align-self: flex-start;
 
     /* Remove this if you don't want the 3D effect */
 }
@@ -84,4 +85,15 @@
     width: 100%;
     font-size: 16px;
     font-weight: bolder;
+}
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
 }

@@ -53,10 +53,14 @@ def summarize():
             ]
             }
         } also dont use back tick markdown ``json while giving response """
-        response = model.generate_content(input_prompt+file.read()) 
-        finalResponse = json.loads(response.text)
-        print(finalResponse)
-        return finalResponse
+        try:
+            response = model.generate_content(input_prompt+file.read()) 
+            finalResponse = json.loads(response.text)
+            print(finalResponse)
+            return finalResponse
+        except:
+            print("ERROR")
+            return {"error" : "upload file again"}
 
     return {"status": "failure"}
 
